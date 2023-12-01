@@ -4,11 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "DoorInterface.generated.h"
+#include "KeyInterface.generated.h"
 
 // This class does not need to be modified.
 UINTERFACE(MinimalAPI)
-class UDoorInterface : public UInterface
+class UKeyInterface : public UInterface
 {
 	GENERATED_BODY()
 };
@@ -16,13 +16,13 @@ class UDoorInterface : public UInterface
 /**
  * 
  */
-class STREAMING_API IDoorInterface
+class STREAMING_API IKeyInterface
 {
 	GENERATED_BODY()
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Interact")
-	void IInteract();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Key Interact")
+	void IPickUpKey();
 };
